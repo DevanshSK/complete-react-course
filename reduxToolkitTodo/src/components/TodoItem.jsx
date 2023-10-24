@@ -28,13 +28,10 @@ function TodoItem({ todo }) {
       <button
         className="inline-flex mr-2 h-8 rounded-lg py-1 px-4 text-sm border-0 border-black/10 justify-center items-center bg-gray-50 hover:bg-gray-100 shrink-0 disabled:opacity-50"
         onClick={() => {
-          if (todo.completed) return;
-
           if (isTodoEditable) {
             editTodo();
           } else setIsTodoEditable((prev) => !prev);
         }}
-        disabled={todo.completed}
       >
         {isTodoEditable ? "📁" : "✏️"}
       </button>
