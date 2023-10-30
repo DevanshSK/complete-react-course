@@ -1,1 +1,1 @@
-# Here i learn React from start to finish.
+# Here i learn React and MERN from start to finish.
